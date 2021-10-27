@@ -328,6 +328,10 @@ body {
 
 .team-list .cards {
   padding-bottom: 30px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .social-list {
@@ -418,6 +422,55 @@ body {
   margin: 30px 0 0 30px;
 }
 
+/*clients section*/
+
+.clients-section {
+  padding-top: 94px;
+}
+
+.clients-title {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+
+  justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
 /*footer*/
 
 .footer-section {
@@ -425,6 +478,26 @@ body {
   background-color: var(--dark-backgroud-color);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .address-footer {
@@ -450,4 +523,33 @@ body {
 }
 .address-footer .address {
   color: var(--white-color);
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: var(--white-color);
 }
