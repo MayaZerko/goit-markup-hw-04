@@ -251,6 +251,17 @@ body {
   width: 270px;
 }
 
+.company-item .section-icon {
+  display: block;
+  background-color: #f5f4fa;
+  text-align: center;
+
+  width: 270px;
+  height: 120px;
+  padding: 25px 103px;
+  margin-bottom: 30px;
+}
+
 .company-ideal .title {
   color: var(--title-text-color);
   margin-top: 0;
@@ -312,10 +323,50 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-list .cards {
   padding-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-color);
+}
+
+.social-icon {
+  fill: #afb1b8;
 }
 
 /*portfolion btn*/
