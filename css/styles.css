@@ -1,13 +1,3 @@
-/*
-основной цвет текста #212121
-вторичный цвет текста #757575
-акцент #2196F3
-белый #FFFFFF
-белый с прозрачностью rgba(255, 255, 255, 0.6)
-цвет фона вторичный #F5F4FA
-темный цвет фона #2F303A
-*/
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -166,6 +156,8 @@ body {
 }
 
 .contact-nav .contact-link {
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -177,6 +169,22 @@ body {
 .contact-nav .contact-link:hover,
 .contact-nav .contact-link:focus {
   color: var(--accent-color);
+}
+
+.address-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.address-icon:hover {
+  fill: var(--accent-color);
+}
+
+.contact-link:hover .address-icon,
+.contact-link:focus .header-mail,
+.contact-link:hover .header-tel,
+.contact-link:focus .header-tel {
+  fill: var(--accent-color);
 }
 
 .border-bottom {
